@@ -12,3 +12,20 @@ current_sum is compared with max_sum, and max_sum is updated if current_sum is g
 After iterating through the entire array, max_sum contains the maximum subarray sum. 
 
 Code:
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int n = nums.length;
+        int res = nums[0];
+        int sum = 0;
+
+        for(int i=0; i < n; i++){
+            if(sum < 0){
+                sum = 0;
+            }  
+
+            sum += nums[i];
+            res = Math.max(res, sum);          
+        }
+        return res;
+    }
+}
