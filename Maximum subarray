@@ -1,0 +1,14 @@
+Kadane's Algorithm is a dynamic programming technique used to find the maximum sum of a contiguous subarray within a given array of numbers. It efficiently determines the largest sum of any subarray by iteratively calculating the maximum sum ending at each position in the array. 
+How it works:
+1. Initialization:
+Two variables are initialized: current_sum (to track the maximum sum ending at the current position) and max_sum (to store the overall maximum sum found so far).
+2. Iteration:
+The algorithm iterates through the array, adding each element to the current_sum.
+3. Update:
+If current_sum becomes negative, it's reset to 0, as a negative subarray would not contribute to the maximum sum.
+4. Comparison:
+current_sum is compared with max_sum, and max_sum is updated if current_sum is greater.
+5. Result:
+After iterating through the entire array, max_sum contains the maximum subarray sum. 
+
+Code:
